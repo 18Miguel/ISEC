@@ -1,0 +1,13 @@
+北北北北北北北北北北北北北北北北北北北北北北北北北北
+北                    [TECLAS]                    北
+北  --------------------------------------------  北
+北 [ ESC         - Sair do jogo                 ] 北
+北 [ ENTER       - Selecionar uma letra         ] 北
+北 [ ESPACE      - Validar palavra              ] 北
+北 [ R           - Resetar palavra              ] 北
+北 [ ARROW UP    - Mover cursor para cima       ] 北
+北 [ ARROW RIGHT - Mover cursor para a direita  ] 北
+北 [ ARROW DOWN  - Mover cursor para baixo      ] 北
+北 [ ARROW LEFT  - Mover cursor para a esquerda ] 北
+北 [                                     VOLTAR ] 北
+北北北北北北北北北北北北北北北北北北北北北北北北北北
