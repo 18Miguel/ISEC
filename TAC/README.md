@@ -1,2 +1,1 @@
-# letter-soup
-Letter Soup Assembly 8086
+# Letter Soup in Assembly 8086
