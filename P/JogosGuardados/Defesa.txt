@@ -1,0 +1,53 @@
+Este jogo teve um total de 25 jogadas.
+
+
+***************************** Ronda 01 *****************************
+O [Jogador 1] jogou no [mini-tabuleiro 2] na [linha 3] e [coluna 3].
+O [Jogador 2] jogou no [mini-tabuleiro 9] na [linha 2] e [coluna 2].
+
+***************************** Ronda 02 *****************************
+O [Jogador 1] jogou no [mini-tabuleiro 5] na [linha 1] e [coluna 1].
+O [Jogador 2] jogou no [mini-tabuleiro 1] na [linha 3] e [coluna 2].
+
+***************************** Ronda 03 *****************************
+O [Jogador 1] jogou no [mini-tabuleiro 8] na [linha 2] e [coluna 2].
+O [Jogador 2] jogou no [mini-tabuleiro 5] na [linha 2] e [coluna 2].
+
+***************************** Ronda 04 *****************************
+O [Jogador 1] jogou no [mini-tabuleiro 5] na [linha 1] e [coluna 2].
+O [Jogador 2] jogou no [mini-tabuleiro 2] na [linha 2] e [coluna 3].
+
+***************************** Ronda 05 *****************************
+O [Jogador 1] jogou no [mini-tabuleiro 6] na [linha 2] e [coluna 3].
+O [Jogador 2] jogou no [mini-tabuleiro 6] na [linha 1] e [coluna 2].
+
+***************************** Ronda 06 *****************************
+O [Jogador 1] jogou no [mini-tabuleiro 2] na [linha 3] e [coluna 1].
+O [Jogador 2] jogou no [mini-tabuleiro 7] na [linha 2] e [coluna 3].
+
+***************************** Ronda 07 *****************************
+O [Jogador 1] jogou no [mini-tabuleiro 6] na [linha 1] e [coluna 3].
+O [Jogador 2] jogou no [mini-tabuleiro 3] na [linha 3] e [coluna 2].
+
+***************************** Ronda 08 *****************************
+O [Jogador 1] jogou no [mini-tabuleiro 8] na [linha 1] e [coluna 1].
+O [Jogador 2] jogou no [mini-tabuleiro 1] na [linha 2] e [coluna 3].
+
+***************************** Ronda 09 *****************************
+O [Jogador 1] jogou no [mini-tabuleiro 6] na [linha 3] e [coluna 3].
+O [Jogador 2] jogou no [mini-tabuleiro 9] na [linha 2] e [coluna 1].
+
+***************************** Ronda 10 *****************************
+O [Jogador 1] jogou no [mini-tabuleiro 4] na [linha 1] e [coluna 3].
+O [Jogador 2] jogou no [mini-tabuleiro 3] na [linha 2] e [coluna 2].
+
+***************************** Ronda 11 *****************************
+O [Jogador 1] jogou no [mini-tabuleiro 5] na [linha 1] e [coluna 3].
+O [Jogador 2] jogou no [mini-tabuleiro 3] na [linha 2] e [coluna 1].
+
+***************************** Ronda 12 *****************************
+O [Jogador 1] jogou no [mini-tabuleiro 4] na [linha 2] e [coluna 2].
+O [Jogador 2] jogou no [mini-tabuleiro 5] na [linha 2] e [coluna 1].
+
+***************************** Ronda 13 *****************************
+O [Jogador 1] jogou no [mini-tabuleiro 4] na [linha 3] e [coluna 1].
