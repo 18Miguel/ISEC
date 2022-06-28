@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+#invoice {
+  font-family: "VT323", monospace;
+  align-self: center;
+  width: 250px;
+  height: 500px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  transform: rotateZ(-2deg);
+  perspective: 1000px;
+}
+
+#invoice-inner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+#invoice-inner.rotated {
+  transform: rotateY(180deg);
+}
+
+#invoice-front, #invoice-back {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #efefef;
+  box-shadow: inset rgba(145, 145, 145, 0.2) -2px 2px 15px 10px;
+  border: solid #efefef 1px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+} 
+
+#invoice-front {
+  display: flex;
+  flex-direction: column;
+}
+
+#invoice-back {
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  transform: rotateY(180deg);
+}
+
+#invoice-mobile-background {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.invoice-object {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 2%;
+  padding: 0 5%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.select-level {
+  margin-top: 10%;
+  position: relative;
+  z-index: 0;
+}
+
+.select-level .disabled {
+  pointer-events: none;
+  background-color: #b1adaa;
+}
+
+.select-content {
+  width: 200px;
+  height: 30px;
+  padding-top: 2%;
+  cursor: pointer;
+  color: #efefef;
+  background-color: #303030/* #ccb7a9 */;
+  border: 2px solid #efefef;
+  border-radius: 6px;
+  transition: all 200ms linear;
+}
+
+.select-content:hover {
+  background-color: #1d1d1d/* #cfc3bb */;
+  padding-bottom: 0;
+  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+}
+.select-content:active {
+  box-shadow: inset -5px -5px 15px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(23, 23, 23, 0.3);
+}
+
+.option-content {
+  font-size: 18px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms linear;
+  position: relative;
+  z-index: -1;
+}
+
+.select-option-level {
+  transition: all 300ms linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: #303030/* #ccb7a9 */;
+  transform: translateY(-5px);
+  border-left: 2px solid #efefef;
+  border-right: 2px solid #efefef;
+  box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 10px;
+}
+
+.select-option-level:nth-child(1) {
+  padding-top: 12px;
+}
+.select-option-level:nth-child(3) {
+  border-radius: 0 0 6px 6px;
+  border-bottom: 2px solid #efefef;
+}
+.select-option-level:hover,
+.select-option-level:active {
+  background-color: #1d1d1d/* #cfc3bb */;
+}
+.option-content.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.message {
+  font-size: 26px;
+  color: #f00;
+  margin-top: 0;
+  margin-bottom: 0;
+  animation: alertMessage 1s alternate-reverse infinite;
+  transition: all 300ms ease-in-out;
+}
+
+@keyframes alertMessage {
+  from { text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black; }
+  to { text-shadow: unset; }
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#start-button {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.start-button {
+  outline: none;
+  font-family: "VT323", monospace;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: flex-end;
+  margin-bottom: 8%;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  color: #efefef;
+  background-color: #303030/* #ccb7a9 */;
+  border: 2px solid #efefef;
+  border-radius: 6px;
+  padding: 0 8px;
+  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  transition: all 350ms ease-in-out;
+}
+.start-button div {
+  transition: all 350ms ease-in-out;
+  height: 40px;
+  width: 40px;
+  background: url("../../resources/Spoon.svg") no-repeat;
+  background-size: 100%;
+  transform: rotate(-90deg);
+  padding-bottom: 3px;
+}
+
+.start-button div div {
+  height: 40px;
+  width: 40px;
+  background: url("../../resources/Spoon.svg") no-repeat;
+  background-size: 100%;
+  transform: rotate(0);
+  padding-bottom: 3px;
+}
+
+.start-button.active div {
+  transform: rotate(-50deg);
+}
+
+.start-button.active div div {
+  transform: rotate(-85deg);
+}
+
+.start-button:hover {
+  background-color: #1d1d1d/* #cfc3bb */;
+  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+}
+
+.start-button:active {
+  box-shadow: inset -5px -5px 15px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(23, 23, 23, 0.3);
+}
+
+#words p{
+  margin: 1% 5%;
+}
+
+#words p:nth-child(1) {
+  margin-top: 8%;
+}
+
+#words-total, #invoice-time, #invoice-points {
+  margin: 2% 5%;
+  display: flex;
+}
+
+#invoice-time {
+  text-align: center;
+}
+
+#game-time.intermittent-time-effect {
+  animation: intermittentTimeEffect 500ms alternate-reverse infinite;
+  transition: animation 0 linear;
+}
+#game-time.ten-sec-left {
+  color: #f00;
+}
+
+@keyframes intermittentTimeEffect {
+  from { text-shadow: -0.2px 0 black, 0 0.2px black, 0.2px 0 black, 0 -0.2px black; }
+  to { text-shadow: unset; }
+}
+
+#insert-word {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+#insert-word-input, #insert-word-button {
+  outline: none;
+  font-family: "VT323", monospace;
+  text-align: center;
+  font-weight: 400;
+  color: #efefef;
+  background-color: #303030/* #ccb7a9 */;
+  border: 2px solid #efefef;
+  border-radius: 6px;
+  margin: 2px 0;
+  padding: 0 8px;
+  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  transition: all 150ms linear;
+}
+
+#insert-word-input {
+  margin-top: 40px;
+  height: 25px;
+  font-size: 18px;
+  cursor: text;
+}
+
+#insert-word-button {
+  height: 30px;
+  font-size: 20px;
+}
+
+#insert-word-input:hover, #insert-word-input:focus {
+  background-color: #1d1d1d/* #cfc3bb */;
+}
+
+#insert-word-input.disabled {
+  pointer-events: none;
+  user-select: none;
+  color: #000000;
+  background-color: #b1adaa;
+}
+
+#insert-word-button:hover {
+  background-color: #1d1d1d/* #cfc3bb */;
+  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+}
+
+#insert-word-button:active {
+  box-shadow: inset -5px -5px 15px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(23, 23, 23, 0.3);
+}

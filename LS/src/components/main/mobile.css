@@ -1,0 +1,139 @@
+@media screen and (max-width: 820px) and (orientation: portrait) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #bowlOfSoup {
+    width: 95vw;
+    height: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  table {
+    min-width: 70vw;
+    min-height: 70vw;
+  }
+
+  td.boardChar {
+    padding: 0 4px;
+    font-size: 12px;
+  }
+
+  #invoice-mobile-background {
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(-6vh);
+    transition: all 450ms ease-in-out;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #invoice-mobile-background.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #invoice {
+    position: absolute;
+    transform: translateY(-650px) rotate(10deg);
+    transition: all 450ms ease-in-out/* , box-shadow 500ms ease-in */;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #invoice-mobile-background.show #invoice {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(0px) rotate(-2deg);
+    /* box-shadow: rgba(128, 128, 128, 0.8) 4px 4px 20px,
+      0px 0px 0px 400px rgba(0, 0, 0, 0.75); */
+  }
+
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #board {
+    width: max-content;
+    height: max-content;
+  }
+
+  #bowlOfSoup {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  table {
+    min-width: 70vh;
+    min-height: 70vh;
+  }
+
+  td.boardChar {
+    padding: 0 3.5px;
+    font-size: 11px;
+  }
+
+  #invoice-mobile-background {
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(-6vh);
+    transition: all 450ms ease-in-out;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #invoice-mobile-background.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  #invoice {
+    width: 250px;
+    height: 90%;
+    position: absolute;
+    transform: translateY(-650px) rotate(10deg);
+    transition: all 450ms ease-in-out/* , box-shadow 500ms ease-in */;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #invoice-mobile-background.show #invoice {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(0px) rotate(-2deg);
+    /* box-shadow: rgba(128, 128, 128, 0.8) 4px 4px 20px,
+      0px 0px 0px 400px rgba(0, 0, 0, 0.75); */
+  }
+
+  #invoice-back {
+    font-size: medium;
+  }
+  
+  /* .start-button {
+    margin-top: 25%;
+  } */
+}

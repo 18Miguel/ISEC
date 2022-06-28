@@ -1,0 +1,34 @@
+.spoon_menu {
+  /* background-color: aqua; */
+  height: auto;
+  width: 100px;
+}
+
+.spoon_menu div {
+  transition: all 350ms ease-in-out;
+  position: relative;
+  top: 5px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  background: url("../../resources/Spoon.svg") no-repeat;
+  background-size: 100%;
+}
+
+.spoon_menu div:nth-child(1) {
+  position: absolute;
+  transform: rotate(-90deg);
+}
+.spoon_menu div:nth-child(2) {
+  position: absolute;
+  transform: rotate(-90deg);
+}
+
+.spoon_menu.open div:nth-child(1) {
+  top: 5px;
+  transform: rotate(-130deg);
+}
+.spoon_menu.open div:nth-child(2) {
+  top: 2px;
+  transform: rotate(-50deg);
+}

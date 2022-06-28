@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("./resources/TableclothTexture.png") no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-rows: 6vh 90vh 4vh;
+}

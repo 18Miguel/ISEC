@@ -1,0 +1,27 @@
+header {
+  font-family: "Patrick Hand", cursive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spoon_menu {
+  display: none;
+}
+
+@media screen and (max-width: 820px) and (orientation: portrait) {
+  .spoon_menu {
+    display: block;
+    position: static;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .spoon_menu {
+    display: block;
+    position: static;
+    z-index: 2;
+  }
+}
+  
